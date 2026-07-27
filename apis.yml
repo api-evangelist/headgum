@@ -1,8 +1,27 @@
 aid: headgum
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/headgum.png
 name: Headgum
-description: Headgum is a company surfaced as a portfolio company of union-square-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Headgum is an American comedy podcast network founded in 2015 by Marty Michael,
+  Amir Blumenfeld, and Jake Hurwitz, with studios in Los Angeles and New York. It
+  produces and distributes premium comedy and entertainment podcasts including
+  Doughboys, Not Another D&D Podcast, Dead Eyes, Hey Riddle Riddle, and Why Won't
+  You Date Me?, and operates Gumball, a host-read podcast and YouTube advertising
+  marketplace that lets brands buy ads directly from creators. Headgum is a
+  portfolio company of Union Square Ventures. This profile is maintained in the
+  API Evangelist network; as of this pass Headgum publishes no public developer
+  API, SDK, or OpenAPI surface.
 url: https://raw.githubusercontent.com/api-evangelist/headgum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Podcasting
+- Podcast Network
+- Media
+- Entertainment
+- Comedy
+- Advertising
+- Podcast Advertising
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/headgum-domain-security.yml
 - type: Website
   url: https://www.headgum.com
+- type: GitHubOrganization
+  url: https://github.com/headgum
+- type: Blog
+  url: https://blog.gumball.fm
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
